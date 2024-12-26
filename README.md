@@ -6,7 +6,7 @@ Just add it to your NixOS `flake.nix` or home-manager:
 
 ```nix
 inputs = {
-  zen-browser.url = "github:MarceColl/zen-browser-flake";
+  zen-browser.url = "github:dimkauzh/zen-browser-flake";
   ...
 }
 ```
@@ -24,8 +24,6 @@ Then in the `configuration.nix` in the `environment.systemPackages` add one of:
 
 ```nix
 inputs.zen-browser.packages."${system}".default
-inputs.zen-browser.packages."${system}".specific
-inputs.zen-browser.packages."${system}".generic
 ```
 
 Depending on which version you want
